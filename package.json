@@ -1,0 +1,21 @@
+{
+  "name": "mern-operations",
+  "version": "1.0.0",
+  "description": "mern stack project rest api functionlty's",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js"
+  },
+  "author": "rajesh",
+  "license": "MIT",
+  "dependencies": {
+    "-": "^0.0.1",
+    "colors": "^1.4.0",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
