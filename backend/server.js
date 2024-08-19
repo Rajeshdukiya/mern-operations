@@ -7,8 +7,11 @@ const app = express();
 //     res.send('Get goals')
 // })
 
-app.get('/api/goals', (req, res)=> {
-    res.status(200).json({massage: "get goals"})
-})
+// app.get('/api/goals', (req, res)=> {
+//     res.status(200).json({massage: "get goals"})
+// })
+app.use('/api/goals', require('./routes/goalRoutes'))
+
+
 
 app.listen(port, () => console.log(`server started on port gitignore ${port}`))
