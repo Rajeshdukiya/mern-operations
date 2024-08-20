@@ -6,7 +6,7 @@ const { type } = require('os')
 const goalSchema = mongoose.Schema(
     {   
         user:{
-            type: mongoose.Schema.typeObjectId,
+            type: mongoose.Schema.Types.ObjectId,
             required: true,
             ref: 'User'
         },
