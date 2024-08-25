@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "mern stack project rest api functionlty's",
   "main": "server.js",
-  "scripts": {
-    "start": "node backend/server.js",
-    "server": "nodemon backend/server.js",
-    "client": "npm start --prefix frontend"
-  },
+"scripts": {
+  "start": "node backend/server.js",
+  "server": "nodemon backend/server.js",
+  "client": "npm start --prefix frontend",
+  "dev": "concurrently \"npm run server\" \"npm run client\""
+},
   "author": "rajesh",
   "license": "MIT",
   "dependencies": {
@@ -21,6 +22,7 @@
     "mongoose": "^8.5.3"
   },
   "devDependencies": {
+    "concurrently": "^8.2.2",
     "nodemon": "^3.1.4"
   }
 }
