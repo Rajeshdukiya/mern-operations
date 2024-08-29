@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {useDispatch} from 'react-redux';
-import {createGoal} from '../features/goals/goalService'
+import {createGoal} from '../features/goals/goalSlice'
 
 const GoalForm = () => {
     const [text, setText] = useState('')
